@@ -6,7 +6,6 @@ public class planTelefonia
     private double Numero;
     private int MinutosUsados;
     private int CostoMinuto;
-    private int saldo;
     private int CostoTotal;
 
     public void PlanTelefonia(String Operador, double Numero, int MinutosUsados, int CostoMinuto)
@@ -28,7 +27,7 @@ public class planTelefonia
             return this.Numero;
         }
     
-        public int getMinutos()
+        public int getMinutosUsados()
         {
             return this.MinutosUsados;
         }
@@ -53,7 +52,7 @@ public class planTelefonia
             this.Numero = pNumero;
         }
     
-        public void setMinutos(int pMinutos)
+        public void setMinutosUsados(int pMinutos)
         {
             this.MinutosUsados = pMinutos;
         }
@@ -73,10 +72,15 @@ public class planTelefonia
             {
                 setCostoTotal(getCostoTotal()/2);
             }
+
+            else
+            {
+                setCostoTotal(getMinutosUsados() * getCostoMinuto());
+            }
         }
 
         public String resultado()
         {
-            return "Numero de celular: " + Numero + "\nMinutos deseados: " + MinutosUsados + "\nOperador: " + Operador + "\nCosto por Minuto: "+ costoMinuto + "\nSaldo a pagar: " + getSaldo();
+            return "Numero de celular: " + Numero + "\nMinutos usados: " + MinutosUsados + "\nOperador: " + Operador + "\nCosto por Minuto: "+ CostoMinuto + "\nTotal a pagar: " + getCostoTotal();
         }
 }
