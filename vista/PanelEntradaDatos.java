@@ -36,7 +36,7 @@ public class PanelEntradaDatos extends JPanel
         lbNumero.setBounds(190,10,80,20);
         add(lbNumero);
         
-        lbMinutos = new JLabel("Minutos deseados =");
+        lbMinutos = new JLabel("Minutos usados =");
         lbMinutos.setBounds(190,40,120,20);
         add(lbMinutos);
         
@@ -79,7 +79,7 @@ public class PanelEntradaDatos extends JPanel
         return tfMinutos.getText();
     }
     
-    public String getCostoTotal()
+    public String getCostoMinuto()
     {
         return tfCosto.getText();
     }
