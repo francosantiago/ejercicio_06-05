@@ -34,17 +34,17 @@ public class Controlador implements ActionListener
                 int Costo = Integer.parseInt(venPrin.miPanelEntradaDatos.getCostoTotal());
                 double Numero = Numero1;
 
-                model = new PlanTelefonia(Operador, Numero, Minutos, Costo);
-                
-                venPrin.miPanelResultado.mostrarResultado("Se ha creado un plan Telefonico");
+                model = new planTelefonia(Operador, Minutos , Costo);
+        
                 venPrin.miPanelResultado.mostrarResultado("Su número es " + model.getNumero());
-                venPrin.miPanelResultado.mostrarResultado("los minutos deseados son: " + model.getMinutos());
+                venPrin.miPanelResultado.mostrarResultado("los minutos deseados son: " + model.getMinutosUsados());
                 venPrin.miPanelResultado.mostrarResultado("El costo por minuto seleccionado es:" + model.getCostoMinuto());
                 venPrin.miPanelResultado.mostrarResultado("Su Operador es " + model.getOperador());
                 
                 venPrin.miPanelOperaciones.desactivarBotonCrear();
                 venPrin.miPanelOperaciones.activarBotones();  
             }
+            
             catch(Exception e)
             {
                 JOptionPane.showMessageDialog(null, "Error en datos de entrada", "Error", JOptionPane.ERROR_MESSAGE);
@@ -53,9 +53,9 @@ public class Controlador implements ActionListener
         
         else if(comando.equals("Total"))
         {
-            int Minutos = Integer.parseInt(venPrin.miPanelEntradaDatos.getMinutos());
-            int Costo = Integer.parseInt(venPrin.miPanelEntradaDatos.getCosto());
-            model.CostoTotal(Minutos, Costo);
+            int Minutos = Integer.parseInt(venPrin.miPanelEntradaDatos.getMinutosUsados());
+            int Costo = Integer.parseInt(venPrin.miPanelEntradaDatos.getCostoTotal());
+            model.CostoTotal(Minutos , Costo);
 
             String Operador = venPrin.miPanelEntradaDatos.getOperador();
 

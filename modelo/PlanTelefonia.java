@@ -83,4 +83,7 @@ public class planTelefonia
         {
             return "Numero de celular: " + Numero + "\nMinutos usados: " + MinutosUsados + "\nOperador: " + Operador + "\nCosto por Minuto: "+ CostoMinuto + "\nTotal a pagar: " + getCostoTotal();
         }
+
+        public void CostoTotal(int minutos, int costo) {
+        }
 }
