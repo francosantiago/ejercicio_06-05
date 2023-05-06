@@ -34,7 +34,7 @@ public class Controlador implements ActionListener
                 int Costo = Integer.parseInt(venPrin.miPanelEntradaDatos.getCostoTotal());
                 double Numero = Numero1;
 
-                model = new planTelefonia(Operador, Minutos , Costo);
+                model = new planTelefonia();
         
                 venPrin.miPanelResultado.mostrarResultado("Su número es " + model.getNumero());
                 venPrin.miPanelResultado.mostrarResultado("los minutos deseados son: " + model.getMinutosUsados());
