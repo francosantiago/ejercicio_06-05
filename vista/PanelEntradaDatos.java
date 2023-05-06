@@ -74,12 +74,12 @@ public class PanelEntradaDatos extends JPanel
         return tfNumero.getText();
     }
     
-    public String getMinutos()
+    public String getMinutosUsados()
     {
         return tfMinutos.getText();
     }
     
-    public String getCosto()
+    public String getCostoTotal()
     {
         return tfCosto.getText();
     }

@@ -30,8 +30,8 @@ public class Controlador implements ActionListener
             {
                 String Operador = venPrin.miPanelEntradaDatos.getOperador();
                 int Numero1 = Integer.parseInt(venPrin.miPanelEntradaDatos.getNumero());
-                int Minutos = Integer.parseInt(venPrin.miPanelEntradaDatos.getMinutos());
-                int Costo = Integer.parseInt(venPrin.miPanelEntradaDatos.getCosto());
+                int Minutos = Integer.parseInt(venPrin.miPanelEntradaDatos.getMinutosUsados());
+                int Costo = Integer.parseInt(venPrin.miPanelEntradaDatos.getCostoTotal());
                 double Numero = Numero1;
 
                 model = new PlanTelefonia(Operador, Numero, Minutos, Costo);
@@ -54,7 +54,7 @@ public class Controlador implements ActionListener
         else if(comando.equals("Total"))
         {
             int Minutos = Integer.parseInt(venPrin.miPanelEntradaDatos.getMinutos());
-            int Costo = Integer.parseInt(venPrin.miPanelEntradaDatos.getCostoTotal());
+            int Costo = Integer.parseInt(venPrin.miPanelEntradaDatos.getCosto());
             model.CostoTotal(Minutos, Costo);
 
             String Operador = venPrin.miPanelEntradaDatos.getOperador();
