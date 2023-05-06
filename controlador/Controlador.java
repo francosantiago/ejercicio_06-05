@@ -51,10 +51,10 @@ public class Controlador implements ActionListener
             } 
         }
         
-        else if(comando.equals("Saldo"))
+        else if(comando.equals("Total"))
         {
             int Minutos = Integer.parseInt(venPrin.miPanelEntradaDatos.getMinutos());
-            int Costo = Integer.parseInt(venPrin.miPanelEntradaDatos.getCosto());
+            int Costo = Integer.parseInt(venPrin.miPanelEntradaDatos.getCostoTotal());
             model.CostoTotal(Minutos, Costo);
 
             String Operador = venPrin.miPanelEntradaDatos.getOperador();

@@ -28,11 +28,11 @@ public class PanelOperaciones extends JPanel
         bAñadir.setActionCommand("añadir");
         
         
-        bSaldo = new JButton("Calcular saldo");
+        bSaldo = new JButton("Calcular Total");
         bSaldo.setFont(new Font("Arial", BOLD, 12));
         bSaldo.setBounds(120,20,120,20);
         add(bSaldo);
-        bSaldo.setActionCommand("Saldo");
+        bSaldo.setActionCommand("Total");
         bSaldo.setEnabled(false);
 
         bSalir = new JButton("Salir");
