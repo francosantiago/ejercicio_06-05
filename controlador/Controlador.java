@@ -62,7 +62,7 @@ public class Controlador implements ActionListener
             venPrin.miPanelResultado.mostrarResultado("\nEl valor a pagar por es de: " + model.getCostoTotal());
         }
 
-        else if(comando.equals("Salir"))
+        else if(comando.equals("salir"))
         {
             System.exit(0);
         }

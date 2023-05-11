@@ -39,7 +39,7 @@ public class PanelOperaciones extends JPanel
         bSalir.setFont(new Font("Arial", BOLD, 12));
         bSalir.setBounds(260,20,90,20);
         add(bSalir);
-        bSalir.setActionCommand("Salir");
+        bSalir.setActionCommand("salir");
         
         TitledBorder borde = BorderFactory.createTitledBorder("Operaciones");
         borde.setTitleColor(Color.RED);
