@@ -25,7 +25,7 @@ public class VentanaPrincipal extends JFrame
         miPanelResultado.setBounds(10,290,380,250);
         add(miPanelResultado);
         
-        setTitle("Telefonia Movil");
+        setTitle("Telefonia Movil - Santiago Franco");
         setSize(400,600);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
